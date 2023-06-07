@@ -1,0 +1,5 @@
+.navbar-transition {
+    transition: 11s;
+    background-color: #E3B04B;
+    border-radius: 0rem 1rem 1rem 0rem ;
+}

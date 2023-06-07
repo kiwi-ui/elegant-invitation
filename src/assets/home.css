@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+section {
+    font-family: 'Cormorant', serif;
+}
+.bg-home{
+    background-image: url('../assets/img/home-cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.color-primary {
+    color: #e3b04b;
+}
+.color-secondary {
+    color: #F1D6AB;
+}
+.bg-color-primary {
+    background-color: #F1D6AB;
+}
+.bg-color-secondary {
+    background-color: rgba(248,248,248,255);
+}
+.cover-schedule {
+    background-image: url('../assets/img/cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10rem 10rem 0 0;
+    position: relative;
+}
+.cover-schedule >  p {
+    z-index: 20;
+}
+.cover-schedule > div {
+    z-index: 20;
+}
+.cover-schedule::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control the darkness */
+    z-index:0;
+    border-radius: 10rem 10rem 0 0;
+}
+.schedule {
+    width: 70%;
+    border-radius: 10rem 10rem 0 0;
+}
+.gallery-photos::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(56, 66, 77, .5);
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+.gallery-photos:hover::before {
+    height: 100%;
+    cursor: pointer;
+}
+.bouncing-btn{
+    animation: bounce 1s infinite;
+    transform-origin: center bottom;
+    cursor: pointer;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}   
