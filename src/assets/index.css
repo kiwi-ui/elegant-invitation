@@ -9,3 +9,10 @@ section {
 .border-box {
   box-sizing: border-box;
 }
+::-webkit-scrollbar-thumb {
+  height: 56px;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+  background: #cacaca;
+}
